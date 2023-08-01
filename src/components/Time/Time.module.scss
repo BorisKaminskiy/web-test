@@ -1,0 +1,18 @@
+.root {
+  width: 2.125rem;
+  font-size: .75rem;
+  line-height: 1.25rem;
+}
+
+.time {
+  color: rgba(96, 94, 92, 1)
+}
+
+.date {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem .75rem;
+  background-color: rgba(64, 126, 201, 0.08);
+  color: rgba(32, 31, 30, 1)
+}

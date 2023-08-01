@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Lato';
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.body_bold {
+  font-weight: 700;
+}
+
+.body_text {
+  color: #201F1E;
+}
+

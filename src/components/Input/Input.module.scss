@@ -1,0 +1,57 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  row-gap: .25rem;
+}
+
+.input {
+  height: 2.5rem;
+  max-height: 7rem;
+  flex: 1 0 auto;
+  border: 1px solid gray;
+  transition: border 0.2s linear, border-color 0.2s linear;
+  padding: .5rem 1rem;
+  overflow-y: scroll;
+
+  &[contentEditable=true]:empty:not(:focus):before {
+      content: attr(data-text);
+      color: rgba(161, 159, 157, 1);
+    }
+
+  &::-webkit-scrollbar {
+    width: .3rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: gray;
+  }
+  
+  &[contenteditable] {
+    border: 1px solid rgba(161, 159, 157, 1);
+    border-radius: .25rem;
+    outline: none;
+  }
+  
+  &[contenteditable]:focus {
+    border: 2px solid rgba(161, 159, 157, 1);
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+  & input {
+    display: none;
+  }
+}
+
+.input_file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}

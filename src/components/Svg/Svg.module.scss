@@ -1,0 +1,17 @@
+.chat {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #A19F9D;
+  cursor: pointer;
+  transition: fill 0.2s linear;
+
+
+  &:hover {
+    fill: black;
+  }
+}
+
+.readed {
+  width: 1rem;
+  height: .6rem;
+}

@@ -1,0 +1,26 @@
+.root {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.app {
+  display: flex;
+  max-width: 1440px;
+}
+
+.mobile {
+  display: none;
+  max-width: 699px;
+}
+
+@media (max-width: 699px) {
+  .app {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+}
